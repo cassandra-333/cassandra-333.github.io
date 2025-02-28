@@ -1,46 +1,39 @@
 body {
-  font-family: 'Avenir';
-}
-.title,
-.loading-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 5em;
-  letter-spacing: .085em;
-  margin: 4.5rem 0 1rem;
+    background-color: #89CFF0; /* Light blue background */
+    color: #000000; /* Black text */
+    font-family: 'Avenir Bold', sans-serif;
+    text-align: center;
 }
 
-.subtitle {
-  font-size: 2em;
-  margin-top: 1.7rem;
+h1, p {
+    color: #FFFFFF; 
 }
 
-.title,
-.loading-title,
-.subtitle {
-  font-family: 'Avenir Bold'; 
+pre {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    background-color: #000000; /* Black background for ASCII art */
+    color: #89CFF0; /* Light blue text */
+    padding: 60px;
+    width: 350px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre; /* Preserve ASCII formatting */
+    overflow: hidden; /* Hide overflow if necessary */
+    border-radius: 20px;
+    border: 10px solid #FFFFFF; /* White border */
+    margin: 20px auto; /* Center the boxes */
+      animation: blink 2s infinite alternate; /* Apply the blinking effect */
+
 }
 
-.tagline {
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: .3em;
-  margin: 10px 0 40px;
-  color: #aaa;
+@keyframes Blink {
+    100% { opacity: 1; }  /* Light blue text (visible) */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; }  /* Light blue text (visible again) */
 }
-
-body {
-  text-align: center;
+pre span {
+    animation: Blink 2.3s infinite ease-in-out; /* Slower and smooth */
 }
-body {
-    background-color: #000000;
-    color: #89CFF0; 
-}
-h1 {
-    background-color: #89CFF0;
-    color: white;
-}
-p {
-    background-color: white;
-    color: black;
